@@ -35,6 +35,9 @@ User.init(
         len: [8, 12],
       },
     },
+    profile_picture: {
+      //what do i need to add here?
+    }
   },
   {
     hooks: {
