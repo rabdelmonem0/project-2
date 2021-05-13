@@ -2,13 +2,13 @@ const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
-class User extends Model {
+class UserRA extends Model {
   checkPassword(loginPw) {
     return bcrypt.compareSync(loginPw, this.password);
   }
 }
 
-User.init(
+UserRA.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -16,7 +16,15 @@ User.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
+    first_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    last_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    user_name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -36,7 +44,9 @@ User.init(
       },
     },
     profile_picture: {
-      //what do i need to add here?
+      type: DataTypes.STRING,
+      allowNull: false,
+      defaultValue: "public/images/avatar-1577909_1280.png"
     }
   },
   {
@@ -54,4 +64,4 @@ User.init(
   }
 );
 
-module.exports = User;
+module.exports = UserRA;
