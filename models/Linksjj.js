@@ -1,31 +1,31 @@
-const {Model, DataTypes} = require('sequelize');
+const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Users extends Model {}
+class Links extends Model {}
 
-Users.init(
+Links.init(
     {
         id: {
             type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
-            autoIncrement: true
+            autoIncrement: true,
         },
-        userName: {
-            type: DataTypes.STRING,
+        userid: {
+            type: DataTypes.INTEGER,
             allowNull: false,
         },
-        bio: {
+        link: {
             type: DataTypes.STRING,
         },
     },
     {
         sequelize,
-        timestamps: false,
         freezeTableName: true,
         underscored: false,
-        modelName: 'Users',
+        timestamps: false,
+        modelName: 'links'
     }
 )
 
-module.exports = Users;
+module.exports = Links;
