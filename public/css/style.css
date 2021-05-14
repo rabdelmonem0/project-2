@@ -43,17 +43,20 @@ header img{
 
 #hold{
     display: inline-flex;
+    width: 100%;
 }
 
 #profileBio{
     width: 60%;
     padding: 3vh 2vw;
+    float: left;
 }
 
 #profileLinks{
     width: 40%;
     background-color: cornflowerblue;
     padding: 2vh 2vw;
+    float: right;
 }
 
 #profileLinks p{
@@ -109,7 +112,9 @@ header img{
     font-size: 90%;
 }
 
-#share{
-
+#action button:hover{
+    background-color: aqua;
 }
+
+
 

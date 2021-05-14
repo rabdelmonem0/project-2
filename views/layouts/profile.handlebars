@@ -18,26 +18,33 @@
         </section>
         <div id="hold">
             <section id="profileBio">
-                <p>This is random text jsut to fill in the bio so it will be changed later on when there is going to be more data added. Till then this is a substatuite for the reagular test that should be here.</p>
+                <p>{{users.bio}}</p>
+                {{!-- <p>This is random text jsut to fill in the bio so it will be changed later on when there is going to be more data added. Till then this is a substatuite for the reagular test that should be here.</p> --}}
             </section>
             <section id="profileLinks">
-                <p><a href="#">randomlink@gmail.com</a></p>
-                <p><a href="#">youtube.com/randomName</a></p>
+                {{#each links}}
+                    <p><a href="#">{{link}}</a></p>
+                {{/each}}
+                {{!-- <p><a href="#">randomlink@gmail.com</a></p>
+                <p><a href="#">youtube.com/randomName</a></p> --}}
             </section>
         </div>
     </div>
     <div id="oldPost">
+        {{#each posts}}
         <div id="examplepost">
             <div id="pichold">
                 <img id="postimage" src="/test/dogtestpic.jpg">
             </div>
-            <p id="postText">random caption for the example this is going to be changed later on.</p>
+            <p id="postText">{{caption}}</p>
+            {{!-- <p id="postText">random caption for the example this is going to be changed later on.</p> --}}
             <div id="action">
                 <button id="share">Share</button>
                 <button id="comments">comments</button>
-                <button id="postLikes">Like: 10</button>
+                <button id="postLikes">Like: {{likes}}</button>
             </div>
         </div>
+        {{/each}}
     </div>
 {{!-- </body>
 </html> --}}
