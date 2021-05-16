@@ -10,11 +10,11 @@ const Posts = require('../../models/postsjj');
 router.get('/:id', async (req, res) => {
     try{
         // const userjj = await Userjj.findAll().catch((err) => res.json(err));
-        const userRR = await UserRA.findAll().catch((err) => res.json(err));
+        // const userRR = await UserRA.findAll().catch((err) => res.json(err));
         // const users = userjj.map((user) => user.get({plain: true}));
-        const users = userRR.map((user) => user.get({plain: true}));
-        console.log('userRoutes line 12', users);
-        res.send(users)
+        // const users = userRR.map((user) => user.get({plain: true}));
+        // console.log('userRoutes line 12', users);
+        // res.send(users)
         // res.render('profile')
         const userData = await Userjj.findByPk(req.params.id);
         const users = userData.get({plain: true});
@@ -25,9 +25,9 @@ router.get('/:id', async (req, res) => {
         const userPosts = await Posts.findAll({where: {userid: req.params.id}});
         const posts = await userPosts.map((post) => post.get({plain:true}))
 
-        // console.log(links)
-        // console.log(users)
-        // console.log(posts)
+        console.log(links)
+        console.log(users)
+        console.log(posts)
         // console.log("working")
         // console.log(userjj)
         // console.log(users.bio)
