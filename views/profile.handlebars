@@ -1,12 +1,5 @@
-{{!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
-</head>
-<body> --}}
+{{!-- 
+<body class="">
     <header>
         <div id="propic">
             <img id="profilePic" src="/test/dogtestpic.jpg">
@@ -52,5 +45,23 @@
         {{/each}}
     </div>
     <script src="/js/profile.js"></script>
-{{!-- </body>
+</body>
 </html> --}}
+
+<div class="login-card">
+    <h2 class="page-title">Login</h2>
+    <form class="form login-form">
+      <div class="form-group">
+        <label for="email-login">Email:</label>
+        <input class="form-input" type="text" id="email-login" />
+      </div>
+      <div class="form-group">
+        <label for="password-login">Password:</label>
+        <input class="form-input" type="password" id="password-login" />
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary" type="submit">login</button>
+      </div>
+    </form>
+  </div>
+
