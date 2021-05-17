@@ -22,4 +22,14 @@ const sequelize = process.env.JAWSDB_URL
 //     }
 // )
 
+// process.env.DB_NAME,
+// process.env.DB_USER,
+// process.env.DB_PASSWORD,
+// {
+//     host: '127.0:3306',
+//     dialect: 'mysql',
+//     port: 3001,
+//     logging: false,
+// }
+
 module.exports = sequelize;
