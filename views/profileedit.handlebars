@@ -1,0 +1,66 @@
+<header>
+        {{!-- <div id="propic">
+            <img id="profilePic" src="/test/dogtestpic.jpg">
+        </div>
+        <button id="editProfile">edit</button> --}}
+        <div class="container">
+  <div class="picture-container">
+    <div class="picture">
+      <img
+        src="/images/avatar-1577909_1280.png"
+        class="picture-src"
+        id="wizardPicturePreview"
+        title=""
+      />
+      <input type="file" id="wizard-picture" class="" />
+    </div>
+    <h6 class="">Choose Profile Picture</h6>
+  </div>
+</div>
+    </header>
+    <div id="nav">
+            <button id="post">Posts</button>
+            <button id="friends">Friends</button>
+    </div>
+    <div id="desc">
+        <section id="addCancel">
+            <button id="cancelbtn">Cancel</button>     
+            <button id="savebtn">Save changes</button>
+        </section>
+
+        <section id="profileNameEdit">
+            <p class="editTitle">Name: </p>
+            <input id="newName" value="{{users.userName}}"></input>
+        </section>
+
+        {{!-- <div id="hold"> --}}
+            <section id="profileBioEdit">
+                <p class="editTitle">Bio: </p>
+                <textarea id="bioText">{{users.bio}}</textarea>
+                {{!-- <input value="{{users.bio}}"></input> --}}
+                {{!-- <p>This is random text jsut to fill in the bio so it will be changed later on when there is going to be more data added. Till then this is a substatuite for the reagular test that should be here.</p> --}}
+            </section>
+
+            <section id="profileLinksEdit">
+                <div class="flexHold">
+                    <p class="editTitle">Links: </p>
+                    <div id="linkList">
+                        {{#each links}}
+                            <div class="pair">
+                                <p class="linksEdit"><a class="linktext" href="#">{{link}}</a></p>
+                                <button class="delete">Delete</button>
+                            </div>
+                        {{/each}}
+                    </div>
+                </div>
+                <div class="flexHold">
+                    <input id="newLink" placeholder="New links"></input>
+                    <button id="newLinkSubmit">Add</button>
+                </div>
+                {{!-- <p><a href="#">randomlink@gmail.com</a></p>
+                <p><a href="#">youtube.com/randomName</a></p> --}}
+            </section>
+        {{!-- </div> --}}
+    </div>
+    <script src="/js/profile.js"></script>
+    <script src="/js/edit.js"></script>
