@@ -47,6 +47,10 @@ UserRA.init(
       type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "public/images/avatar-1577909_1280.png"
+    },
+    bio: {
+      type: DataTypes.STRING,
+      allowNull: true,
     }
   },
   {
