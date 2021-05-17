@@ -41,13 +41,12 @@ body {
   background-color: aqua;
 }
 
-.card {
+.card1 {
   width: 23%;
   float: left;
   height: auto;
   border-radius: 5px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0), 0 6px 36px rgba(0, 0, 0, 0.13);
-  background-color: green;
 }
 
 .col2 {
