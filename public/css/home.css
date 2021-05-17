@@ -1,7 +1,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  background-color: brown;
+  background-color: white;
 }
 
 .wrapper {
@@ -38,7 +38,7 @@ body {
   height: 100%;
   margin: 10px auto 10px auto;
   overflow: hidden;
-  background-color: white;
+  background-color: aqua;
 }
 
 .card {
@@ -55,12 +55,14 @@ body {
   margin-left: 2%;
   float: left;
   height: 100vh;
-  background-color: blue;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0), 0 6px 36px rgba(0, 0, 0, 0.13);
+  background-color: wheat;
 }
 .card3 {
   width: 23%;
   float: right;
-  height: 50vh;
+  height: auto;
   border-radius: 5px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0), 0 6px 36px rgba(0, 0, 0, 0.13);
   background-color: green;
