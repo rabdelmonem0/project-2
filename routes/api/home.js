@@ -1,9 +1,9 @@
 // const {Model, DataTypes} = require('sequelize');
 // const sequelize = require('../config/connection');
-// const express = require('express');
-// const fileUpload = require('express-fileupload');
-console.log('hello');
-// const router = require('express').Router();
+//  const express = require('express');
+//  const fileUpload = require('express-fileupload');
+
+const router = require('express').Router();
 
 
 // const app = express();
@@ -19,13 +19,25 @@ console.log('hello');
 // app.get('', (req, res) => {
 //     res.render('index')
 // });
-
-
 // router.get('/', (req, res) => {
-//     res.render('homepage')
-// });
+//     try{
+//         res.render('home')//, {
+//         //     loggedIn: req.session.loggedIn
+//         // })
+//     } catch (err) {
+//         console.log(err);
+//         res.status(500).json(err);
+//     }
+// })
 
-// module.exports = router;
+
+
+router.get('/', (req, res) => {
+    console.log(req.session)
+    res.render('homepage')
+});
+
+module.exports = router;
 
 // app.post('', (req, res) => {
 //     let person;
@@ -50,3 +62,11 @@ console.log('hello');
 
 
 // app.listen(port, ()=> console.log(`listening on port ${port}`));
+
+
+  
+  
+  
+  
+  
+  
