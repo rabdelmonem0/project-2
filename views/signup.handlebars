@@ -1,4 +1,44 @@
 <form class="form signup-form">
+<<<<<<< HEAD
+    <div class="row form-group">
+        <div class="col">
+            <input type="text" for="username-signup" id="first_name" class="form-control" placeholder="First name"
+                aria-label="First name">
+            {{first_name}}
+            </input>
+        </div>
+        <div class="col">
+            <input type="text" id="last_name" class="form-control" placeholder="Last name" aria-label="Last name">
+            {{last_name}}
+            </input>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="InputEmail">Email address</label>
+        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+        {{email}}
+        </input>
+        <small id="emailHelp" class="form-text text-muted">We'll never share your
+            email with anyone else.</small>
+    </div>
+    <div class="form-group">
+        <label for="InputPassword">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Password">
+        {{password}}
+        </input>
+    </div>
+    <div class="form-check row g-3 needs-validation">
+        <a href="#">Terms and Conditions</a>
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required />
+        <label class="form-check-label" for="invalidCheck">
+            Agree to terms and conditions
+        </label>
+        <div class="invalid-feedback">
+            You must agree before submitting.
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary"><a href="/profileRA">Sign Up!</a></button>
+=======
   <div class="row form-group">
     <div class="col">
       <input type="text" for="username-signup" id="first_name" class="form-control" placeholder="First name" aria-label="First name">
@@ -51,5 +91,6 @@
       </div>
     </div>
   <button type="submit" class="btn btn-primary"><a href="/profileRA">Sign Up!</a></button>
+>>>>>>> main
 </form>
 <script src="./js/signup.js"></script>

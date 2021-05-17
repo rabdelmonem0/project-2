@@ -1,14 +1,14 @@
-const like = document.querySelector('#postLikes');
+// const like = document.querySelector('#postLikes');
 
-const addLike = () => {
-    console.log("Working")
-    // fetch('/api/users', {
-    //     method: 'PUT',
-    //     headers: {
-    //         'Content-Type': 'application/json',
-    //     },
-    //     body: likes + 1,
-    // })
-}
+// const addLike = () => {
+//     console.log("Working")
+//     // fetch('/api/users', {
+//     //     method: 'PUT',
+//     //     headers: {
+//     //         'Content-Type': 'application/json',
+//     //     },
+//     //     body: likes + 1,
+//     // })
+// }
 
-like.addEventListener('click', addLike)
+// like.addEventListener('click', addLike)

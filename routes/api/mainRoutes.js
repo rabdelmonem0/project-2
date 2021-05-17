@@ -2,6 +2,7 @@ const router = require('express').Router();
 
 router.get('/', (req, res) => {
     try{
+        console.log(req.session)
         res.render('homepage')//, {
         //     loggedIn: req.session.loggedIn
         // })
