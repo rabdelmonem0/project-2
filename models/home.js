@@ -1,7 +1,7 @@
-const {Model, DataTypes} = require('sequelize');
-const sequelize = require('../config/connection');
-const express = require('express');
-const fileUpload = require('express-fileupload');
+// const {Model, DataTypes} = require('sequelize');
+// const sequelize = require('../config/connection');
+// const express = require('express');
+// const fileUpload = require('express-fileupload');
 console.log('hello');
 // const router = require('express').Router();
 
