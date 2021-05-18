@@ -1,4 +1,4 @@
-<div class="wrapper">
+{{!-- <div class="wrapper">
     <div class="navbar" id="main-navbar">
         <div class="navbar-inner" id="navbar-inner">
             <div class="nav-col1">
@@ -7,12 +7,12 @@
             </div>
             <div class="nav-col2">
                 <image class="logo1"
-                    src="https://image.shutterstock.com/z/stock-vector-silhouette-of-cat-and-dog-on-white-background-671156590.jpg">
+                    src="public/images/Logo-Furry-Friends-Animation_d6e3b464-d032-47d8-8845-b58a8e07e8c5_1826x.gif">
                 </image>
 
             </div>
             <div class="nav-col3">
-                <div class="profile1"><a href="./login.handlebars">logout</a></div>
+                <div class="profile1"><a href="/login">logout</a></div>
             </div>
         </div>
     </div>
@@ -46,5 +46,84 @@
 
     </div>
 </div>
+ --}}
+
+
+
+
+<div class="card p-4">
+  <div class="wrapper">
+    <div class="navbar" id="main-navbar">
+        <div class="navbar-inner" id="navbar-inner">
+            <div class="nav-col1">
+                {{!-- <div class="button">Home</div> --}}
+                {{!-- <div class="button">messages</div> --}}
+            </div>
+            <div class="nav-col2">
+                <img src="/images/Logo-Furry-Friends-Animation_d6e3b464-d032-47d8-8845-b58a8e07e8c5_1826x.gif" class="card-img-top width:100%" alt="...">
+
+            </div>
+            <div class="nav-col3">
+                <div class="profile1"><a href="/login">Logout</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="mainbody" id="mainbody">
+        <div class="card1">
+            <img class="image" src="\images\avatar-1577909_1280.png" alt="User Profile">
+            <h5 class="card__title petname">Rabdelmonem</h5>
+            <div class="Pets petname">Pets: Drogon</div>
+            <p class="about"></p>
+            <button type="button" class="btn btn-primary"><a href="/profileRA">View Profile</a></button>
+            <br>
+            <form action="/" method="POST" enctype="multipart/form-data">
+                <h5>Upload Profile Photos</h5>
+                <input type="file" name="person" accept="image/*" />
+                <input type="submit" class="bt btn-primary">
+            </form>
+        </div>
+        <div class="col2 ">
+            <div class="cards text-dark bg-light mb-3" style="max-width: 18rem;">
+  <div class="card-header">Nala Cat</div>
+  <div class="card-body">
+      <img src="/images/nala.jpeg" class="card-img-top" alt="...">
+    <p class="card-text">Loving my new bowtie!</p>
+  </div>
+</div>
+<div class="cards text-dark bg-light mb-3" style="max-width: 18rem;">
+  <div class="card-header">Sterling Silver Cat</div>
+  <div class="card-body">
+    <img src="/images/483564ddb690fa71bbb047222d195f99.jpeg" class="card-img-top" alt="...">
+    <p class="card-text">Into the wild.</p>
+  </div>
+</div>
+
+
+
+
+
+<div class="cards text-dark bg-light mb-3" style="max-width: 18rem;">
+  <div class="card-header">Lil Bub Fans</div>
+  <div class="card-body">
+     <img src="/images/Lil-Bub-2013.jpeg" class="card-img-top" alt="...">
+    <p class="card-text">R.I.P Lil Bub :(</p>
+  </div>
+</div>
+        </div>
+
+        <div class="card3">
+            <img class="pet" src="/images/s-l1200.jpeg" alt="pet Profile">
+            <br>
+            <form action="/" method="POST" enctype="multipart/form-data">
+                <h5 class="petname">Drogon</h5>
+                <input type="file" name="person" accept="image/*" />
+                <input type="submit" class="bt btn-primary">
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<script src="/js/homedh.js"></script>
 
 <script src="/js/homedh.js"></script>

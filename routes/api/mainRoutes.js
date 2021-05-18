@@ -12,4 +12,9 @@ router.get('/', (req, res) => {
     }
 })
 
+router.post('/signuup', async(req, res) => {
+    // first check if the user is in the database already
+    // insert new user
+})
+
 module.exports = router

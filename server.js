@@ -4,7 +4,7 @@ const session = require("express-session");
 const exphbs = require("express-handlebars");
 const cookieParser = require("cookie-parser");
 
-const path = require("path");
+// const path = require("path");
 const sequelize = require("./config/connection");
 const routes = require("./routes");
 
@@ -27,7 +27,8 @@ const sess = {
 
 app.use(session(sess));
 
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+// app.engine("handlebars", exphbs({ layoutsDir: __dirname + '/views/layouts', }));
+app.engine("handlebars", exphbs({ defaultLayout: "main", extname: "handlebars" }));
 app.set("view engine", "handlebars");
 
 app.use(express.json());

@@ -1,3 +1,66 @@
+
+
+
+
+
+
+
+
+<body class="profilebody">
+    <header>
+        <div id="propic">
+            <img
+                    src="/images/avatar-1577909_1280.png"
+                    class="profilePic"{{!--"picture-src"--}}
+                    id="wizardPicturePreview"
+                    title=""
+                />
+        </div>
+        <button id="editProfile"><a href="/profile-setup">edit</a></button>
+    </header>
+    <div id="nav">
+            <button id="post">Posts</button>
+            <button id="friends">Friends</button>
+    </div>
+    <div id="desc">
+        <section id="profileName">
+            <p>{{user.user_name}}</p>
+        </section>
+        <div id="hold">
+            <section id="profileBio">
+                <p>{{users.bio}}</p>
+                {{!-- <p>This is random text jsut to fill in the bio so it will be changed later on when there is going to be more data added. Till then this is a substatuite for the reagular test that should be here.</p> --}}
+            </section>
+            <section id="profileLinks">
+                {{#each links}}
+                    <p><a href="#">{{link}}</a></p>
+                {{/each}}
+                {{!-- <p><a href="#">randomlink@gmail.com</a></p>
+                <p><a href="#">youtube.com/randomName</a></p> --}}
+            </section>
+        </div>
+    </div>
+    <div id="oldPost">
+        {{#each posts}}
+        <div id="examplepost">
+            <div id="pichold">
+                <img id="postimage" src="/test/dogtestpic.jpg">
+            </div>
+            <p id="postText">{{caption}}</p>
+            {{!-- <p id="postText">random caption for the example this is going to be changed later on.</p> --}}
+            <div id="action">
+                <button id="share">Share</button>
+                <button id="comments">comments</button>
+                <button id="postLikes">Like: {{likes}}</button>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    <script src="/js/profile.js"></script>
+</body>
+</html>
+
+
 {{!-- 
 <body class="">
     <header>
@@ -48,7 +111,7 @@
 </body>
 </html> --}}
 
-<div class="login-card">
+{{!-- <div class="login-card">
     <h2 class="page-title">Login</h2>
     <form class="form login-form">
       <div class="form-group">
@@ -63,5 +126,5 @@
         <button class="btn btn-primary" type="submit">login</button>
       </div>
     </form>
-  </div>
+  </div> --}}
 

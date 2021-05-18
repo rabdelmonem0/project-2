@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const User = require("../../models/userJJ");
+const User = require("../../models/UserRA");
 
 router.get("/", (req, res) => {
   try {
@@ -12,22 +12,22 @@ router.get("/", (req, res) => {
   }
 });
 
-router.post("/", (req, res) => {
+router.post("/", async(req, res) => {
   const { email, password } = req.body;
   console.log(req.body);
-  User.findOne({ where: { email } }).then((user) => {
+  const userLogin = await User.findOne({ where: { email } }).then((user) => {
     console.log(user);
     res.status(200).json({});
   });
+
+  if (!userLogin) {
+    // return some error message
+  }
+
+  const matchedPassword = await userLogin.checkPassword()
 });
 
-router.get("/signup", (req, res) => {
-  try {
-    res.render("signup");
-  } catch (err) {
-    console.log(err);
-    res.status(404).json(err);
-  }
-});
+// localhost:3001/login/signup
+
 
 module.exports = router;
