@@ -8,28 +8,28 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 .navbar {
   width: 100%;
   height: 60px;
   overflow: hidden;
-  background-color: red;
+  /* background-color: red; */
 }
 .navbar-inner {
   width: 1200px;
   height: 60px;
   margin: 0px auto 0px auto;
   overflow: hidden;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 .nav-col1 {
   width: 26%;
   float: left;
   height: 100%;
-  background-color: red;
+  /* background-color: red; */
   z-index: 10;
 }
 
@@ -38,7 +38,7 @@ body {
   height: 100%;
   margin: 10px auto 10px auto;
   overflow: hidden;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 .card1 {
@@ -56,7 +56,11 @@ body {
   height: 100vh;
   border-radius: 5px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0), 0 6px 36px rgba(0, 0, 0, 0.13);
-  background-color: wheat;
+  /* background-color: wheat; */
+}
+
+.cards {
+  margin: auto;
 }
 .card3 {
   width: 23%;
@@ -64,7 +68,7 @@ body {
   height: auto;
   border-radius: 5px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0), 0 6px 36px rgba(0, 0, 0, 0.13);
-  background-color: green;
+  /* background-color: green; */
 }
 
 .nav-col2 {
@@ -72,14 +76,17 @@ body {
   margin-left: 2%;
   float: left;
   height: 100%;
-  background-color: rgb(211, 211, 228);
+  /* background-color: rgb(211, 211, 228); */
 }
-
+.petname {
+  text-align: center;
+}
 .nav-col3 {
   width: 26%;
   float: right;
   height: 100;
-  background-color: purple;
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0), 0 6px 36px rgba(0, 0, 0, 0.13); */
+  /* background-color: purple; */
 }
 
 .button {
@@ -114,9 +121,9 @@ body {
   background-color: yellow;
 }
 
-.btn-primary {
+/* .btn-primary {
   background-color: #008cba;
-}
+} */
 
 .image {
   display: block;
