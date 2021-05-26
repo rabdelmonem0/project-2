@@ -1,6 +1,7 @@
 const router = require('express').Router();
 // const Userjj = require('../../models/userJJ')
-const UserRA = require('../../models/UserRA')
+const bcrypt = require('bcrypt');
+const User = require('../../models/User');
 const multer  = require('multer')
 const upload = multer({ dest: 'uploads/' })
 const Userjj = require('../../models/userJJ');
@@ -42,7 +43,27 @@ router.get('/:id', async (req, res) => {
 
 router.post('/profile', upload.single('avatar'), async (req, res) => {
 
-})
+});
+
+router.post('/', async (req, res) => {
+    try {
+        // const newUser = req.body;
+        // newUser.password = await bcrypt.hash(req.body.password, 10);
+        const { firstName, lastName, password, email } = req.body;
+        const newUser = {
+            first_name: firstName,
+            last_name: lastName,
+            email,
+            password
+        }
+        console.log("NEW USER: ", newUser);
+        const userData = await User.create(newUser);
+        console.log("USER DATA: ", userData)
+        res.status(200).json(userData);
+    } catch (err) {
+        res.status(400).json(err);
+    }
+});
 
 router.get('/:id/friends', async (req, res) => {
     try {
